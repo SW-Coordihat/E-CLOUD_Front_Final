@@ -1,11 +1,11 @@
 import React from "react";
 
-const Fifth = () => {
+const MyPage = () => {
   return (
     <div>
-      <h1>Fifth</h1>
+      <h1>My Page</h1>
     </div>
   );
 };
 
-export default Fifth;
+export default MyPage;
