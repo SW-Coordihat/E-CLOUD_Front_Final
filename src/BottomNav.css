@@ -6,10 +6,10 @@
   height: 45px;
 }
 
-/* nav {
+nav {
   overflow: hidden;
   border-top: 2px solid grey;
-} */
+}
 .nav-link {
   float: left;
   width: 20%;
