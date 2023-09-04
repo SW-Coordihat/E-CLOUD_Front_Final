@@ -11,7 +11,6 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        {/* <Route path="/first" element={<First />}></Route> */}
         <Route path="/second" element={<Second />}></Route>
         <Route path="/third" element={<Third />}></Route>
         <Route path="/fourth" element={<Fourth />}></Route>
