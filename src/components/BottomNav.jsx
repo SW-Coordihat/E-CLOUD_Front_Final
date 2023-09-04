@@ -8,14 +8,12 @@ const BottomNav = () => {
   const [activeNav, setActiveNav] = useState(1);
   return (
     <nav className="wrapper">
-      {/* 하단 네비게이션 최상위 태그 */}
-      <Link to="/first" className="nav-link" onClick={() => setActiveNav(1)}>
+      <Link to="/" className="nav-link" onClick={() => setActiveNav(1)}>
         <div>
           <FontAwesomeIcon
             icon="home"
             className={activeNav === 1 ? "nav-item active" : "nav-item"}
           />
-          {/* 네비게이션을 구성하고 있는 하나의 버튼 */}
         </div>
       </Link>
       <Link to="/second" className="nav-link" onClick={() => setActiveNav(2)}>
@@ -42,7 +40,7 @@ const BottomNav = () => {
           />
         </div>
       </Link>
-      <Link to="/fifth" className="nav-link" onClick={() => setActiveNav(5)}>
+      <Link to="/MyPage" className="nav-link" onClick={() => setActiveNav(5)}>
         <div>
           <FontAwesomeIcon
             icon="user"

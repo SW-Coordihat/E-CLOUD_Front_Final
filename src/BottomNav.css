@@ -1,28 +1,28 @@
 .wrapper {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 45px;
-  }
-  
-  nav {
-    overflow: hidden;
-    border-top: 2px solid grey;
-  }
-  .nav-link {
-    float: left;
-    width: 20%;
-    text-align: center;
-  
-    height: 45px;
-    line-height: 45px;
-  }
-  
-  .nav-item {
-    color: grey;
-  }
-  
-  .active {
-    color: #ef5c89;
-  }
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+}
+
+nav {
+  overflow: hidden;
+  border-top: 2px solid grey;
+}
+.nav-link {
+  float: left;
+  width: 20%;
+  text-align: center;
+
+  height: 45px;
+  line-height: 45px;
+}
+
+.nav-item {
+  color: grey;
+}
+
+.active {
+  color: #ef5c89;
+}
