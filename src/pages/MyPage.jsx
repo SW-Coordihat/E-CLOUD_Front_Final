@@ -3,6 +3,7 @@ import "../MyPage.css"; // 스타일 파일 임포트
 import profileImage from "../components/UserProfile";
 import username from "../components/UserName";
 import NavigationBar from "../components/MyPageNav";
+import SeekedClip from "../components/SeekedClip";
 
 const MyPage = () => {
   return (
@@ -12,6 +13,7 @@ const MyPage = () => {
       </div>
       <h2>{username}</h2>
       <NavigationBar />
+      <SeekedClip />
     </div>
   );
 };
