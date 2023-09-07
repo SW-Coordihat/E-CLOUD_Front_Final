@@ -1,28 +1,35 @@
-import React, { useState } from 'react';
-import '../MyPage.css';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "../MyPage.css";
 
-const NavigationBar = () => {
-  const [activeTab, setActiveTab] = useState('saved'); // 기본적으로 'saved' 탭을 선택
+const NavigationBar = (props) => {
+  const [activeTab, setActiveTab] = useState(props.value);
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);
   };
 
   return (
-    <div className="navigation-bar">
-      <div
-        className={`nav-item ${activeTab === 'saved' ? 'active' : ''}`}
-        onClick={() => handleTabClick('saved')}
+    <nav className="navigation-bar">
+      <Link
+        to="/MyPage/Saved"
+        onClick={() => handleTabClick("saved")}
+        className="nav-item"
       >
-        저장한 클립
-      </div>
-      <div
-        className={`nav-item ${activeTab === 'viewed' ? 'active' : ''}`}
-        onClick={() => handleTabClick('viewed')}
+        <div className={`nav-item ${activeTab === "saved" ? "active" : ""}`}>
+          저장한 클립
+        </div>
+      </Link>
+      <Link
+        to="/MyPage/Seeked"
+        className="nav-item"
+        onClick={() => handleTabClick("viewed")}
       >
-        살 펴본 클립
-      </div>
-    </div>
+        <div className={`nav-item ${activeTab === "viewed" ? "active" : ""}`}>
+          살펴 본 클립
+        </div>
+      </Link>
+    </nav>
   );
 };
 

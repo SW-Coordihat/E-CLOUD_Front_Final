@@ -40,7 +40,7 @@ const BottomNav = () => {
           />
         </div>
       </Link>
-      <Link to="/MyPage" className="nav-link" onClick={() => setActiveNav(5)}>
+      <Link to="/MyPage/Saved" className="nav-link" onClick={() => setActiveNav(5)}>
         <div>
           <FontAwesomeIcon
             icon="user"
