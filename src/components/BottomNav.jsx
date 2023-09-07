@@ -8,7 +8,7 @@ const BottomNav = () => {
   const [activeNav, setActiveNav] = useState(1);
   return (
     <nav className="wrapper">
-      <Link to="/first" className="nav-link" onClick={() => setActiveNav(1)}>
+      <Link to="/" className="nav-link" onClick={() => setActiveNav(1)}>
         <div>
           <FontAwesomeIcon
             icon="home"
@@ -40,7 +40,7 @@ const BottomNav = () => {
           />
         </div>
       </Link>
-      <Link to="/fifth" className="nav-link" onClick={() => setActiveNav(5)}>
+      <Link to="/MyPage/Saved" className="nav-link" onClick={() => setActiveNav(5)}>
         <div>
           <FontAwesomeIcon
             icon="user"
