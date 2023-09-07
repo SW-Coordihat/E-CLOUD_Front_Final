@@ -9,6 +9,7 @@
 nav {
   overflow: hidden;
   border-top: 2px solid grey;
+  background-color: white;
 }
 .nav-link {
   float: left;

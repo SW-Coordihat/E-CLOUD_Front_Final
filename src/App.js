@@ -5,8 +5,9 @@ import Second from "./pages/Second";
 import Third from "./pages/Third";
 import Fourth from "./pages/Fourth";
 import MyPage from "./pages/MyPage";
-import SeekedClip from "../src/components/SeekedClip"
-import SavedClip from "../src/components/SavedClip"
+import SeekedClip from "../src/pages/SeekedClip"
+import SavedClip from "../src/pages/SavedClip"
+import ClickImage from "../src/pages/ClickImage"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/fourth" element={<Fourth />}></Route>
         <Route path="/MyPage/Saved" element={<SavedClip />}></Route>
         <Route path="/MyPage/Seeked" element={<SeekedClip />}></Route>
+        <Route path="/click" element={<ClickImage/>}></Route>
       </Routes>
     </div>
   );

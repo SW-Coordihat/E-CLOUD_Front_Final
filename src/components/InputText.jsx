@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 function InputText(props) {
-  const [text, setText] = useState("유성");
+  const [text, setText] = useState("");
 
   const TT = async () => {
     try {
@@ -30,7 +30,7 @@ function InputText(props) {
 
   return (
     <div>
-      <input value={text} onChange={handleTextChange} />
+      <input value={text} onChange={handleTextChange} placeholder="검색어를 입력하세요." />
       <button
         onClick={() => {
           console.log("test");
