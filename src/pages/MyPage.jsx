@@ -1,13 +1,18 @@
 import React from "react";
-import '../MyPage.css'; // 스타일 파일 임포트
+import "../MyPage.css"; // 스타일 파일 임포트
+import profileImage from "../components/UserProfile";
+import username from "../components/UserName";
+import NavigationBar from "../components/MyPageNav";
 
-const MyPage = ({ username, profileImage }) => {
+const MyPage = (props) => {
+  const route = props.value;
   return (
-    <div className="user-profile-container">
+    <div>
       <div className="profile-image">
         <img src={profileImage} alt={`${username}'s Profile`} />
       </div>
       <h2>{username}</h2>
+      <NavigationBar value={route} />
     </div>
   );
 };
