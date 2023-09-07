@@ -7,7 +7,7 @@ import NavigationBar from "../components/MyPageNav";
 const MyPage = (props) => {
   const route = props.value;
   return (
-    <div className="user-profile-container">
+    <div>
       <div className="profile-image">
         <img src={profileImage} alt={`${username}'s Profile`} />
       </div>
